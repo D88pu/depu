@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="s1.css" />
+    <script
+      src="https://kit.fontawesome.com/635c2f2bc2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="music-player">
+
+            <nav>
+                <div class="circle">
+                   <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="https://i1.sndcdn.com/artworks-6UL7VFkhsnlyhIDW-OVV2Qw-t500x500.jpg" width="23px">
+            <h1>Song Name</h1>
+            <p>Sidhu Moose Wala</p>
+
+            <audio controls id="song">
+                <source src="Drippy - SirfJatt.Com.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i id="playIcon" class="fa-solid fa-play"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+        <div><h1>name</h1></div>
+    </div>
+    <script src="s1.js"></script>
+  </body>
+</html>
